@@ -6,6 +6,12 @@
 	<packaging>war</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>test</testSourceDirectory>
+    <testResources>
+    	<testResource>
+    		<directory>resources</directory>
+   		</testResource>
+    </testResources>
     <plugins>        
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -85,6 +91,11 @@
 		  <groupId>org.apache.axis2</groupId>
 		  <artifactId>axis2-transport-local</artifactId>
 		  <version>1.6.2</version>
-		</dependency>					
+		</dependency>		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.1</version>
+		</dependency>            					
    	</dependencies>
 </project>
